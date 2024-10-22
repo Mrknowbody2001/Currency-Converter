@@ -1,0 +1,182 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+.app-description {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggle-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f0f0f0;
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.toggle-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.toggle-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.converter-card {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+} */
+
+#get-rates-btn,
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+#get-rates-btn:hover {
+  background-color: #218838;
+}
+
+.currency-icon {
+  margin-right: 5px;
+}
+
+#result,
+#exchange-rates {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #555;
+  text-align: center;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+#exchange-rates ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#exchange-rates ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#exchange-mode {
+  display: flex;
+  flex-direction: column; /* Ensure elements inside stack vertically */
+  align-items: stretch;
+}
+
+/* for check */
+
+#exchange-rates-container {
+  margin-top: 20px; /* Space between the app and the list */
+  max-height: 200px; /* Limit the height to make it scrollable */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
